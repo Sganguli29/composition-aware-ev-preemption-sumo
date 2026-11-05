@@ -51,6 +51,3 @@ A headless run requires the `sumo` executable; a GUI run requires `sumo-gui` and
 
 ## Validity and limitations
 The lane-level order-reversal checker is intentionally conservative. It will **miss** passes involving lane switches or separated observations; nonzero `posLat` does not by itself prove passing. No positive seepage result should be claimed before observing real trajectories. Queue spillback, departures delayed by insertion constraints and microsimulation collisions/teleports must be checked before empirical comparisons. Values are synthetic demonstration assumptions and require field-based calibration before any Indian-traffic generalizability claim. GUI rendering is not a measurement; numeric traces are the reproducible evidence.
-
-## Phase gate
-Proceed to Phase 1 only when network connectivity, signal operation, EV insertion, trajectory logging, and motorcycle filtering are visually and quantitatively inspected. Do not use Phase 0 data to claim the proposed algorithm beats any baseline.
